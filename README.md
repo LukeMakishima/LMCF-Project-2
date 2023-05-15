@@ -1,3 +1,22 @@
+# LMCF-Project-2
+Group Members:
+---------------------------------
+
+Luke Makishima
+
+LukeMakishima@csu.fullerton.edu
+
+---------------------------------
+
+Carlos Felix
+
+carlosfjr42@csu.fullerton.edu
+
+---------------------------------
+
+This project contains the Crane Unloading problem 
+
+
 # Project 2: Dynamic vs. Exhaustive - Crane unloading problem
 # CPSC 335 - Algorithm Engineering
 # Spring 2023
