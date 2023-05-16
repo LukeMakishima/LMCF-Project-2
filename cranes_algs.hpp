@@ -103,7 +103,6 @@ path crane_unloading_dyn_prog(const grid& setting) {
   // comment.
         if (r > 0 && A[r-1][c].has_value()) {
           from_above = A[r-1][c];
-
           if (from_above->is_step_valid(STEP_DIRECTION_SOUTH)) {
             from_above->add_step(STEP_DIRECTION_SOUTH);
           }
@@ -131,7 +130,7 @@ path crane_unloading_dyn_prog(const grid& setting) {
         }
       }
     }
-  }      
+      
   cell_type* best = &(A[0][0]);
   assert(best->has_value());
   for (coordinate r = 0; r < setting.rows(); ++r) {
