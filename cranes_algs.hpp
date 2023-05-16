@@ -37,8 +37,7 @@ path crane_unloading_exhaustive(const grid& setting) {
   const size_t max_steps = setting.rows() + setting.columns() - 2;
   assert(max_steps < 64);
 
-  // TODO: implement the exhaustive search algorithm, then delete this
-  // comment.
+
   path best(setting);
   for (size_t steps = 0; steps <= max_steps; steps++) {
     uint64_t mask = uint64_t(1) << steps;
@@ -99,8 +98,7 @@ path crane_unloading_dyn_prog(const grid& setting) {
     cell_type from_above = std::nullopt;
     cell_type from_left = std::nullopt;
 
-	    // TODO: implement the dynamic programming algorithm, then delete this
-  // comment.
+
         if (r > 0 && A[r-1][c].has_value()) {
           from_above = A[r-1][c];
           if (from_above->is_step_valid(STEP_DIRECTION_SOUTH)) {
